@@ -1,0 +1,1175 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Bangladesh NID Download System</title>
+  <!-- General CSS Files -->
+  <!<link rel="stylesheet" href="app.min.css">
+  <link rel="stylesheet" href="datatables.min.css">
+  <link rel="stylesheet" href="dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="bootstrap-social.css">
+  <link rel="stylesheet" href="summernote-bs4.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="custom.css">
+  <link rel="icon" type="image/x-icon" href="logo-ec.png">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <script type="text/javascript" async="" src="https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?24615"></script><script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  
+  
+<style>
+/* .dropdown-menu {
+    margin: 0.125rem -105px 0;
+} */
+.main-sidebar {
+    box-shadow: 0 4px 25px 0rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    /* background-color: #fff; */
+    z-index: 880;
+    left: 0;
+    background-image: linear-gradient(#032559, #032559);
+}
+ul.sidebar-menu li a {
+    color: #fff !important;
+}
+ul.sidebar-menu li a {
+    color: #fff !important;
+}
+
+.modal-confirm {		
+	color: #636363;
+	width: 400px;
+}
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+	text-align: center;
+	font-size: 14px;
+}
+.modal-confirm .modal-header {
+	border-bottom: none;   
+	position: relative;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+	position: absolute;
+	top: -5px;
+	right: -2px;
+}
+.modal-confirm .modal-body {
+	color: #999;
+}
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;		
+	border-radius: 5px;
+	font-size: 13px;
+	padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+	color: #999;
+}		
+.modal-confirm .icon-box {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	border-radius: 50%;
+	z-index: 9;
+	text-align: center;
+	border: 3px solid #f15e5e;
+}
+.modal-confirm .icon-box i {
+	color: #f15e5e;
+	font-size: 46px;
+	display: inline-block;
+	margin-top: 13px;
+}
+.modal-confirm .btn, .modal-confirm .btn:active {
+	color: #fff;
+	border-radius: 4px;
+	background: #60c7c1;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	min-width: 120px;
+	border: none;
+	min-height: 40px;
+	border-radius: 3px;
+	margin: 0 5px;
+}
+.modal-confirm .btn-secondary {
+	background: #c1c1c1;
+}
+.modal-confirm .btn-secondary:hover, .modal-confirm .btn-secondary:focus {
+	background: #a8a8a8;
+}
+.modal-confirm .btn-danger {
+	background: #f15e5e;
+}
+.modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+	background: #ee3535;
+}
+
+
+
+.bottomTabMehidi .containerm {
+	position: fixed;
+	
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+  background: #fff;
+    padding: 10px 0;
+}
+// End Codepen spesific styling
+
+
+.bottomTabMehidi .menum {
+	display: flex;
+	flex-grow: 1;
+	height: 72px;
+	max-width: 370px;
+	border-radius: 12px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0 0 1px 0 rgba(#342ead, 0.25), 0 15px 30px 0 rgba(#342ead, 0.1);
+}
+
+.bottomTabMehidi .menu-itemm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	text-decoration: none;
+	&:focus,
+	&:hover {
+		outline: none;
+		.material-icons {
+			font-family: "Material Icons";
+			color: #342ead;
+		}
+
+		.menu-item-labelm {
+			color: #342ead;
+		}
+	}
+}
+
+.bottomTabMehidi .material-icons {
+	font-family: "Material Icons Outlined";
+	display: block;
+	margin-bottom: 4px;
+	font-size: 26px;
+	color: mix(#fff, #342ead, 60%);
+	transition: 0.25s ease;
+}
+
+.bottomTabMehidi .menu-item-labelm {
+	display: block;
+	font-size: 13px;
+	color: mix(#fff, #342ead, 70%);
+	transition: 0.25s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .modal-confirm .modal-content{
+    width: 340px;
+    margin: 0 auto;
+  }
+}
+
+</style>
+
+<link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="fileinput.min.css">
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+        button:focus,
+        input:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        /*----------multiple-file-upload-----------*/
+        .file-upload-contain {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .file-upload-contain .file-input,
+        .file-upload-contain .file-preview {
+            position: initial;
+        }
+
+        .file-upload-contain .file-drop-zone {
+            border: 2px dashed #1e80e8;
+            transition: 0.3s;
+            margin: 0;
+            padding: 0;
+            border-radius: 20px;
+            background-color: #f1f8fe;
+            min-height: auto;
+        }
+
+        .file-upload-contain .file-drop-zone.clickable:hover,
+        .file-upload-contain .file-drop-zone.clickable:focus,
+        .file-upload-contain .file-highlighted {
+            border: 2px dashed #1e80e8 !important;
+            background-color: #dfedfc;
+        }
+
+        .upload-area i {
+            color: #1e80e8;
+            font-size: 50px;
+        }
+
+        .upload-area p {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2580e8;
+        }
+
+        .upload-area p b {
+            color: #1e80e8;
+        }
+
+        .upload-area button {
+            padding: 8px 16px;
+            min-width: 150px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #1e80e8;
+            border: 2px solid #1e80e8;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .upload-area button:hover {
+            background-color: #1e80e8;
+            box-shadow: 0px 4px 8px rgb(37 128 232 / 48%);
+        }
+
+        .file-preview {
+            padding: 0;
+            border: none;
+            margin-bottom: 30px;
+        }
+
+        .file-preview .fileinput-remove {
+            display: none;
+        }
+
+        .file-drop-zone-title {
+            padding: 20px 10px;
+        }
+
+        .file-drop-zone .file-preview-thumbnails {
+            cursor: pointer;
+        }
+
+        .file-preview-frame {
+            cursor: default;
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: #2580e8;
+            box-shadow: none;
+            border-radius: 8px;
+            width: 100%;
+            padding: 15px;
+            margin: 8px 0px;
+        }
+
+        .file-preview-frame:not(.file-preview-error):hover {
+            border: none;
+            box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+        }
+
+        .file-preview-frame .kv-file-content {
+            min-width: 45px;
+            min-height: 45px;
+            width: 45px;
+            height: 45px;
+            border-radius: 4px;
+            margin-right: 10px;
+            background-color: #fff;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .file-preview-image {
+            border-radius: 4px;
+        }
+
+        .file-preview-frame .file-footer-caption {
+            padding-top: 0;
+        }
+
+        .file-preview-frame .file-footer-caption {
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .file-detail {
+            font-size: 14px;
+            height: auto;
+            width: 100%;
+            line-height: initial;
+        }
+
+        .file-detail .file-caption-name {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .file-detail .file-size {
+            color: #f1f8fe;
+            font-size: 12px;
+        }
+
+        .kv-zoom-cache {
+            display: none;
+        }
+
+        .file-preview-frame .file-thumbnail-footer {
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .file-preview-frame .file-drag-handle,
+        .file-preview-frame .file-upload-indicator {
+            float: none;
+        }
+
+        .file-preview-frame .file-footer-buttons {
+            float: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .file-preview-status.text-center {
+            display: none;
+        }
+
+        .kv-file-remove.file-remove {
+            border: none;
+            background-color: #ef2f2f;
+            color: #fff;
+            width: 25px;
+            height: 25px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin: 0px 4px;
+        }
+
+        .file-drag-handle.file-drag {
+            border: none;
+            background-color: #fff;
+            color: #2580e8;
+            width: 25px;
+            height: 25px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin: 0px 4px;
+            display: none;
+        }
+
+        .kv-file-upload.file-upload {
+            border: none;
+            background-color: #48bd22;
+            color: #fff;
+            width: 25px;
+            height: 25px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin: 0px 4px;
+        }
+
+        .file-thumb-loading {
+            background: none !important;
+        }
+
+        .file-preview-frame.sortable-chosen {
+            background-color: #64a5ef;
+            border-color: #64a5ef;
+            box-shadow: none !important;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+<style type="text/css"><br>        #whatsapp_chat_widget{<br>            display: block<br>        }<br>        .wa-chat-box-content-send-btn-text{<br>            margin-left: 8px;<br>            margin-right: 8px;<br>            z-index: 1;<br>            color: rgb(255, 255, 255);<br>        }<br>        .wa-chat-box-content-send-btn-icon{<br>            width: 16px;<br>            height: 16px;<br>            fill: rgb(255, 255, 255);<br>            z-index: 1;<br>            flex: 0 0 16px;<br>        }<br>        .wa-chat-box-content-send-btn{<br>            text-decoration: none;<br>            color: rgb(255, 255, 255)!important;<br>            font-size: 15px;<br>            font-weight: 700;<br>            line-height: 20px;<br>            cursor: pointer;<br>            position: relative;<br>            display: flex;<br>            -webkit-box-pack: center;<br>            justify-content: center;<br>            -webkit-box-align: center;<br>            align-items: center;<br>            -webkit-appearance: none;<br>            padding: 8px 12px;<br>            border-radius: 30px;<br>            border-width: initial;<br>            border-style: none;<br>            border-color: initial;<br>            border-image: initial;<br>            background-color: #4dc247!important;<br>            margin: 20px;<br>            overflow: hidden;<br>        }<br>        .wa-chat-box-send{<br>            background-color:white;<br><br>        }<br>        .wa-chat-box-content-chat-brand{        <br>            font-size: 13px;<br>            font-weight: 700;<br>            line-height: 18px;<br>            color: rgba(0, 0, 0, 0.4);<br>        }<br>        .wa-chat-box-content-chat-welcome{        <br>            font-size: 14px;<br>            line-height: 19px;<br>            margin-top: 4px;<br>            color: rgb(17, 17, 17);<br>        }<br>        .wa-chat-box-content-chat{<br>            background-color: white;<br>            display: inline-block;<br>            margin: 20px;<br>            padding: 10px;<br>            border-radius: 10px;<br>        }<br>        .wa-chat-box-content{<br>            background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');<br>            <br>        }<br>        .wa-chat-bubble-close-btn{<br>            cursor: pointer;<br>            position: absolute;<br>            right: 20px;<br>            top: 20px;<br>        }<br>        .wa-chat-box-brand-text{<br>            margin-left: 20px;<br>        }<br>        .wa-chat-box-brand-name{<br>            font-size: 16px;<br>            font-weight: 700;<br>            line-height: 20px;<br>        }<br>        .wa-chat-box-brand-subtitle{<br>            font-size: 13px;<br>            line-height: 18px;<br>            margin-top: 4px;<br>        }<br>        <br>        .wa-chat-box-header{<br>            height: 100px;<br>            max-height: 100px;<br>            min-height: 100px;<br>            background-color: #0a5f54;<br>            color: white;<br>            border-radius: 10px 10px 0px 0px;<br>            display:flex;<br>            align-items: center;<br>        }<br>        .wa-chat-box-brand{<br>            margin-left: 20px;<br>            width: 50px;<br>            height: 50px;<br>            border-radius: 25px;<br>            box-shadow: 2px 2px 6px rgba(0,0,0,0.4);<br>        }<br>        .wa-chat-box{<br>            background-color:white;<br>            z-index: 16000160 !important;<br>            margin-bottom: 60px;<br>            width: 360px;<br>            position: fixed !important;<br>            bottom: 5px !important;<br>            right : 2px;<br>            border-radius: 10px;<br>            box-shadow: 2px 2px 6px rgba(0,0,0,0.4);<br>            font: 400 normal 15px/1.3 -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;<br>        }<br>        #wa-widget-send-button {<br>            margin: 0 0 5px 0 !important;      <br>            padding-left: 0px;<br>            padding-right: 0px;<br>            position: fixed !important;<br>            z-index: 16000160 !important;<br>            bottom: 0 !important;<br>            text-align: center !important;<br>            height: 50px;<br>            min-width: 50px;<br>            border-radius: 17px;<br>            visibility: visible;<br>            transition: none !important;<br>            background-color: #4dc247;<br>            box-shadow: 2px 2px 6px rgba(0,0,0,0.4);<br>            right : 2px;<br>            cursor: pointer;<br>            display: flex;<br>            align-items: center;<br>            justify-content:center;<br>        }<br>        .wa-messenger-svg-whatsapp{<br>            fill: white;<br>            width: 41px;<br>            height: 50px;<br>            stroke: none;<br>        }<br>        .wa-chat-box-poweredby{<br>            text-align: center;<br>            font: 400 normal 15px/1.3 -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;<br>            margin-bottom: 15px;<br>            margin-top: -10px;<br>            font-style: italic;<br>            font-size: 12px;<br>            color: lightgray;<br>        }<br>        @media only screen and (max-width: 600px) {<br>            .wa-chat-box<br>            {<br>                width: auto;<br>                position: fixed !important;<br>                right: 20px!important;<br>                left: 20px!important;<br>            }<br>        }<br>    </style></head>
+
+<body class="light light-sidebar theme-white sidebar-gone" style="">
+  <div class="loader" style="display: none;"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar sticky" style="left:0; background: transparent;">
+
+    <div class="form-inline mr-auto d-none d-md-block">
+      <ul class="navbar-nav mr-3">
+        <li id="mynavbar_mehidi" style="background: #333;
+    border-radius: 10px;">
+          <a data-toggle="sidebar" id="sidebar_mehidi" class="nav-link nav-link-lg collapse-btn imgremove">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" style="color:#fff"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+  
+          </a>
+  
+        </li>
+        <span class="ddym"></span>
+      </ul>
+    </div>
+        <div style="display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;">
+      <p style="margin:0px;    margin: 0px;
+      font-size: 18px;
+      margin-right: 15px;
+      color: #000;
+      font-weight: bold;" id="userSiteAmount">424.00 ৳</p>
+      <!--<a href="https://shop.bkash.com/style-collection01683390494/pay/bdt10/8MrVeQ" class="btn btn-sm btn-success"  target="_blank">Add Amount</a>-->
+            <a href="#addAmount" class="btn btn-sm" style="background-color:#032559;color:#fff;padding: 9px 18px;" data-toggle="modal" target="_blank">রিচার্জ করুন</a>
+
+    
+    </div>
+    <!-- <ul class="navbar-nav navbar-right">
+      <li class="dropdown"><a href="#" data-toggle="dropdown"
+          class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="https://kfekd.quest/assets/img/user.png"
+            class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+        <div class="dropdown-menu dropdown-menu-right pullDown">
+          <div class="dropdown-title">Hello Admin</div>
+          <div class="dropdown-divider"></div>
+          <a href="" class="dropdown-item has-icon text-danger"><span class="acCSS"> Logout</span><i class="fas fa-sign-out-alt"></i>
+  
+          </a>
+        </div>
+      </li>
+    </ul> -->
+    <div class="nav-item dropdown">
+                  <a href="#" id="openLogout" data-toggle="dropdown" class="nav-link dropdown-toggle user-action" aria-expanded="true" style="color:#000">Admin</a>
+                  <div class="dropdown-menu" id="showLogout" style="left: -129px;
+    width: 300px;">
+                      <!--
+                      <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a>
+  
+                      <div class="dropdown-divider"></div> -->
+                      <p class="dropdown-item has-icon"><span class="acCSS">alaminhossain183@gmail.com</span></p>
+                    <a href="https://kfekd.quest/user/logout" class="dropdown-item has-icon text-danger"><span class="acCSS"> Logout</span><i class="fas fa-sign-out-alt"></i>
+  
+          </a>
+                  </div>
+              </div>
+  </nav>
+        <div class="main-sidebar sidebar-gone1 sidebar-style-2" tabindex="1" style="overflow: hidden; outline: none;">
+    <aside id="sidebar-wrapper">
+      <div class="sidebar-brand">
+        <!-- <br> -->
+        <img src="logo-ec.png" class="header-logo" style="width:50%">
+        <!--<h4 class="logo-name"></h4>-->
+        <br>
+        <br>
+      </div>
+      <style>
+        /* hr {
+          margin-top: 0px;
+          margin-bottom: 1rem;
+          border: 0;
+          border-top: 1px solid #0000001a;
+        } */
+        .main-sidebar .sidebar-menu li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 12px !important;
+    width: 100%;
+    letter-spacing: 0.3px;
+    color: #60686f;
+    font-weight: 600;
+    text-decoration: none;
+}
+      </style>
+      <!-- <div class="sidebar-user">
+              <div class="sidebar-user-picture">
+                <img alt="image" src="assets/img/user.png">
+              </div> -->
+      <!-- <div class="sidebar-user-details">
+                <div class="user-name">Olivia Thomas</div>
+                <div class="user-role">Administrator</div>
+                <div class="sidebar-userpic-btn">
+                  <a href="profile.html" data-toggle="tooltip" title="Profile">
+                    <i data-feather="user"></i>
+                  </a>
+                  <a href="email_inbox.html" data-toggle="tooltip" title="Mail">
+                    <i data-feather="mail"></i>
+                  </a>
+                  <a href="chat.html" data-toggle="tooltip" title="Chat">
+                    <i data-feather="message-square"></i>
+                  </a>
+                  <a href="login.html" data-toggle="tooltip" title="Log Out">
+                    <i data-feather="log-out"></i>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+      <ul class="sidebar-menu">
+        <li class="dropdown">
+          <a href="https://kfekd.quest/user/create/file/submission" class="nav-link"><i class="fas fa-chart-pie"></i><span>এনআইডি কার্ড তৈরী করুন</span></a>
+        </li>
+        <li class="dropdown">
+            <a href="https://kfekd.quest/user/file/submission/list" class="nav-link"><i class="fas fa-list"></i><span>এনআইডি ডাউনলোড লিস্ট</span></a>
+        </li>
+
+                <br>
+      </ul>
+    </aside>
+  </div>      <!-- Main Content -->
+      <div class="main-content" style="padding-left: 30px; min-height: 662px;">
+        <div class="container">
+        
+    
+
+    <section class="bg-diffrent">
+        <div class="container">
+            <form id="submitalldatafornid">
+                <input type="hidden" name="_token" value="RqPtQg1XY5BxyXn2n40sGhctcfhtpKEOPIqmTBlC">                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="file-upload-contain">
+                            <div class="file-input theme-explorer-fas"><div id="scrollAfterUpload" class="file-preview">
+    <div class="file-drop-zone clickable" tabindex="-1"><div class="file-drop-zone-title"><div class="upload-area"><i class="far fa-images"></i><p>ব্রাউজ বা টেনে আনুন সাইন কপি পিডিএফ ফাইল</p> <div> <button type="button">ব্রাউজ ফাইল</button> </div></div></div>
+    <div class="clearfix"></div>    <div class="file-preview-status text-center text-success"></div>
+    <div class="kv-fileinput-error file-error-message" style="display: none;"></div>
+    </div>
+</div> <div class="file-preview-thumbnails">
+ 
+<div class="file-preview-frame file-sortable  kv-preview-thumb" id="thumb-multiplefileupload-512047__E0_A6_9F_E0_A6_BF_E0_A6_95_E0_A6_BE_E0_A6_B0_20_E0_A6_AC_E0_A7_8D_E0_A6_B2_E0_A6_BE_E0_A6_82_E0_A6_95_20_E0_A6_AB_E0_A6_B0_E0_A6_AE_E0_A7_87_E0_A6_9F.pdf" data-fileindex="-1" data-fileid="512047__E0_A6_9F_E0_A6_BF_E0_A6_95_E0_A6_BE_E0_A6_B0_20_E0_A6_AC_E0_A7_8D_E0_A6_B2_E0_A6_BE_E0_A6_82_E0_A6_95_20_E0_A6_AB_E0_A6_B0_E0_A6_AE_E0_A7_87_E0_A6_9F.pdf" data-template="pdf" data-zoom="" title=""><div class="kv-file-content">
+<object class="kv-preview-data file-preview-pdf" title="" data="blob:https://kfekd.quest/1b58caaf-2417-4089-a3c8-0176caee9574" type="application/pdf" style="width: 100%; height: 160px; position: relative;">
+<div class="file-preview-other">
+<span class="file-other-icon"><i class="bi-file-earmark-fill"></i></span>
+</div>
+</object>
+</div><div class="file-thumbnail-footer">
+<div class="file-detail"><div class="file-caption-name"></div>
+    <div class="file-size"> <samp>()</samp></div>
+</div>   <div class="file-actions">
+    <div class="file-footer-buttons">
+          <button type="button" class="kv-file-remove file-remove" title="Remove file"><i class="fa fa-times"></i></button>
+      </div>
+</div>
+<button class="file-drag-handle drag-handle-init file-drag" title="Move / Rearrange"><i class="fa fa-arrows-alt"></i></button>
+<div class="clearfix"></div>
+</div>
+
+<div class="kv-zoom-cache"></div></div>
+</div>
+
+<div class="kv-upload-progress kv-hidden" style="display: none;"><div class="progress">
+    <div class="progress-bar bg-success progress-bar-success progress-bar-striped active progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+        0%
+     </div>
+</div></div>
+<div class="clearfix"></div>
+<span class="">
+<button type="button" title="Abort ongoing upload" class="btn btn-default btn-secondary kv-hidden fileinput-cancel fileinput-cancel-button" style="display: none;"><i class="bi-slash-circle"></i>  <span class="hidden-xs">Cancel</span></button>
+
+
+</span><input id="multiplefileupload" type="file" name="file" accept=".pdf" tabindex="-1" class="file-no-browse"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="formdata" style="">
+                    <h3 style="text-align: center">NID Info</h3>
+                    <div class="row">
+                        <div class="col-md-6" style="display: flex;
+                        align-items: center;">
+                            <div class="form-group">
+                                <label for="first" style="display: block">NID Photo</label>
+                                <input style="width: 230px;" type="file" placeholder="" id="imageUrl1" name="imageUrl1">
+                            </div>
+                            <img style="width: 55px;" id="imageUrl1_url" src="http://api.nidw.services/images/1665636633496-6c284bb3-a7e8-46e9-84ba-c0d2f810878dimg_p0_1.png">
+                        </div>
+                        <!--  col-md-6   -->
+
+                        <div class="col-md-6" style="    display: flex;
+                        align-items: center;">
+                            <div class="form-group">
+                                <label for="last" style="display: block">Signature</label>
+                                <input style="width: 230px;" type="file" placeholder="" id="imageUrl2" name="imageUrl2">
+                            </div>
+                            <img style="width: 55px;" id="imageUrl2_url" src="http://api.nidw.services/images/1665636633497-6c284bb3-a7e8-46e9-84ba-c0d2f810878dimg_p0_2.png">
+                        </div>
+                        <!--  col-md-6   -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="first">Name (Bangla)</label>
+                                <input type="text" name="nameBangla" class="form-control" placeholder="Name (Bangla)" id="nameBangla" value="">
+                            </div>
+                        </div>
+                        <!--  col-md-6   -->
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="last">Name (English)</label>
+                                <input type="text" name="nameEnglish" class="form-control" placeholder="Name (English)" id="nameEnglish" value="">
+                            </div>
+                        </div>
+                        <!--  col-md-6   -->
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="company">NID Number</label>
+                                <input type="text" class="form-control" placeholder="NID Number" id="nid" name="nid" value="">
+                            </div>
+
+
+                        </div>
+                        <!--  col-md-6   -->
+
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label for="phone">PIN Number</label>
+                                <input type="text" class="form-control" name="pin" id="pin" placeholder="PIN Number" value="">
+                            </div>
+                        </div>
+                        <!--  col-md-6   -->
+                    </div>
+                    <!--  row   -->
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label for="email">Father Name</label>
+                                <input type="text" class="form-control" id="nameFather" name="nameFather" placeholder="Father Name" value="">
+                            </div>
+                        </div>
+                        <!--  col-md-6   -->
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="url">Mother Name</label>
+                                <input type="text" class="form-control" name="nameMother" id="nameMother" placeholder="Mother Name" value="">
+                            </div>
+
+                        </div>
+                        <!--  col-md-6   -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            <div class="form-group">
+                                <label for="email">Birth Place</label>
+                                <input type="text" class="form-control" id="birthPlace" name="birthPlace" placeholder="Birth Place" value="">
+                            </div>
+                        </div>
+                        <!--  col-md-6   -->
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="url">Date Of Birth</label>
+                                <input type="text" class="form-control" id="dob" name="dob" placeholder="Date Of Birth" value="">
+                            </div>
+
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="url">Blood Group</label>
+                                <input type="text" class="form-control" id="bloodGroup" name="bloodGroup" placeholder="Blood Group">
+                            </div>
+
+                        </div>
+                        <!--  col-md-6   -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="form-group">
+                                <label for="email">Full Address</label>
+                                <textarea class="form-control" id="fulladdress" name="fulladdress" placeholder="Full Address" rows="2">বাসা/হোল্ডিং: , গ্রাম/রাস্তা: , ডাকঘর:  - , , </textarea>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--  row   -->
+
+
+
+
+                    <div style="display: flex;justify-content: center;
+                    margin-bottom: 50px;">
+                        <a data-toggle="modal" id="downloadpdf" class="btn btn-primary">Save &amp; Download NID</a>
+                        <button type="submit" style="display: none" id="niddownloadsubmit"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-confirm">
+          <div class="modal-content">
+            <div class="modal-header flex-column">
+              <div style=" width:100%;   display: flex;
+justify-content: center;
+">
+<img src="https://kfekd.quest/assets/img/logo-ec.png" style="width: 100px;">
+</div>						
+              
+                      <button type="button" class="close coloseModal">×</button>
+            </div>
+            <div class="modal-body">
+              <p style="font-size: 16px;
+              color: #333;">NID টি ডাউনলোড করার জন্য আপনার একাউন্ট থেকে 0 টাকা কেটে নেওয়া হবে।</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-secondary coloseModal">Cancel</button>
+
+              <button onclick="downloadPdfSave(424,13)" class="btn btn-danger">Download</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+</div>
+
+          </div>
+      
+      
+       <div id="addAmount" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+          <div class="modal-content">
+            <form id="addAmountSubmit" method="post">
+                <input type="hidden" name="_token" value="RqPtQg1XY5BxyXn2n40sGhctcfhtpKEOPIqmTBlC">            <div class="row">
+                <div class="pt-3">
+                    <label for="amount" id="uddokpayAmountL">সর্বনিম্ন রিচার্জ 20Tk</label>
+                    <input type="number" required="" class="form-control" id="uddokpayAmount" name="amount" placeholder="Enter Amount" value="">
+                </div>
+                <input type="hidden" id="userId" name="userId" value="">
+            </div>
+           
+            <div class="modal-footer justify-content-center">
+               
+
+             
+                
+              <button type="submit" id="amountSubmitButton" class="btn" style="background-color: #032559;color:#fff">সাবমিট</button>
+             
+            </div>
+        </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="loadMe" tabindex="-1" aria-labelledby="loadMeLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center" style="    height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;">
+                    <div class="spinner-border" role="status">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      
+
+<div class="bottomTabMehidi  d-sm-block d-md-none d-lg-none d-xl-none">
+  <div class="containerm">
+    <!-- code here -->
+    <div class="menum" style="display: flex;">
+      <a href="https://kfekd.quest/user/create/file/submission" class="menu-itemm">
+        <span class="material-icons">list</span>
+
+        <span class="menu-item-labelm">ক্রিয়েট ফাইল</span>
+      </a>
+      <a href="https://kfekd.quest/user/file/submission/list" class="menu-itemm">
+        <span class="material-icons">list</span>
+        <span class="menu-item-labelm">ফাইল লিস্ট</span>
+      </a>
+
+      
+      <!--<a href="https://tawk.to/chat/6318f79b37898912e967d63a/1gcd7l7j7" target="_blank" class="menu-itemm">-->
+          
+           <a href="https://wa.me/8801683390494?text=Hello" target="_blank" class="menu-itemm">
+        <span class="material-icons">chat</span>
+        <span class="menu-item-labelm">লাইভ চ্যাট</span>
+      </a>
+    </div>
+    <!-- end of code -->
+  </div>
+</div>
+
+      <footer class="main-footer">
+    <div class="footer-left">
+      কপিরাইট © ২০২২ <div class="bullet"></div> এনআইডি ডাউনলোড <a href="#"></a>
+    </div>
+    <div class="footer-right">
+    </div>
+  </footer>
+    </div>
+  </div>
+
+  <script>
+
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+    var finalEnlishToBanglaNumber = {
+  0: "০",
+  1: "১",
+  2: "২",
+  3: "৩",
+  4: "৪",
+  5: "৫",
+  6: "৬",
+  7: "৭",
+  8: "৮",
+  9: "৯",
+};
+
+String.prototype.getDigitBanglaFromEnglish = function () {
+  var retStr = this;
+  for (var x in finalEnlishToBanglaNumber) {
+    retStr = retStr.replace(new RegExp(x, "g"), finalEnlishToBanglaNumber[x]);
+  }
+  return retStr;
+};
+  </script>
+
+    <!-- General JS Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.2.3/js/plugins/sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.2.3/themes/fas/theme.min.js"></script>
+   
+  
+    
+    
+    <script src="app.min.js"></script>
+  <!-- JS Libraies -->
+  
+  
+  <script src="datatables.min.js"></script>
+  <script src="dataTables.bootstrap4.min.js"></script>
+  <script src="summernote-bs4.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="datatables.js"></script>
+  <script src="fileuploader.js"></script><div id="kvFileinputModal" class="file-zoom-dialog modal fade file-zoom-fullscreen" aria-labelledby="kvFileinputModalLabel" tabindex="-1"><div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header kv-zoom-header">
+      <h6 class="modal-title kv-zoom-title" id="kvFileinputModalLabel"><span class="kv-zoom-caption"></span> <span class="kv-zoom-size"></span></h6>
+      <div class="kv-zoom-actions"><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-toggleheader" title="Toggle header" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="bi-arrows-expand"></i></button><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-fullscreen active" title="Toggle full screen" data-toggle="button" aria-pressed="true" autocomplete="off"><i class="bi-arrows-fullscreen"></i></button><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-borderless" title="Toggle borderless mode" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="bi-arrows-angle-expand"></i></button><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-close" title="Close detailed preview" data-dismiss="modal" aria-hidden="true"><i class="bi-x-lg"></i></button></div>
+    </div>
+    <div class="floating-buttons"></div>
+    <div class="kv-zoom-body file-zoom-content file-sortable" style="height: 576px;"></div>
+<button type="button" class="btn btn-default btn-outline-secondary btn-navigate btn-kv-prev" title="View previous file"><i class="bi-chevron-left"></i></button> <button type="button" class="btn btn-default btn-outline-secondary btn-navigate btn-kv-next" title="View next file"><i class="bi-chevron-right"></i></button>
+    <div class="kv-zoom-description"></div>
+  </div>
+</div>
+</div>
+  <!-- Custom JS File -->
+  <script src="custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+ 
+  <script src="jquery-ui.js"></script>
+    <!-- Template JS File -->
+  <script src="scripts.js"></script>
+  
+   
+
+<script>
+console.log("hello mehidi1");
+$("#mynavbar_mehidi").click(function () {
+      console.log("clided");
+    var body = $(".main-sidebar"),
+      w = $(window);
+
+    // if (w.outerWidth() <= 1024) {
+      body.removeClass("search-show search-gone");
+      if (body.hasClass("sidebar-gone1")) {
+        body.removeClass("sidebar-gone1");
+        body.addClass("sidebar-show1");
+        $("#sidebar_mehidi").html(`
+<svg style="color:#fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`);
+
+ w = $(window);
+
+    if (w.outerWidth() > 600) {
+       $('.main-content').css({paddingLeft:'250px'})
+ 
+    }
+
+      } else {
+        body.addClass("sidebar-gone1");
+        body.removeClass("sidebar-show1");
+        $("#sidebar_mehidi").html(`<svg style="color:#fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`);
+        $('.main-content').css({paddingLeft:'35px'})
+      }
+
+    //  update_sidebar_nicescroll();
+    // } else {
+    //   body.removeClass("search-show search-gone");
+    //   if (body.hasClass("sidebar-mini")) {
+    //     toggle_sidebar_mini(false);
+    //   } else {
+    //     toggle_sidebar_mini(true);
+    //   }
+    // }
+
+    return false;
+  });
+      $(document).ready(function(){
+console.log("hello mehidi");
+  // jQuery methods go here...
+
+});
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <script>
+    
+    const requird_amount = 20;
+    
+    
+    $('#uddokpayAmount').val(requird_amount)
+    $('#uddokpayAmountL').text('সর্বনিম্ন রিচার্জ '+requird_amount+'Tk')
+
+async function onSubmit(event) {
+     event.preventDefault();
+    
+    
+    if($('#uddokpayAmount').val() < requird_amount){
+        
+        alert('সর্বনিম্ন রিচার্জ '+requird_amount+'Tk')
+        
+    }else{
+        
+        // Prevent the default form submission event from happening.
+
+
+ const values = {
+  full_name:"alaminhossain183",
+  email:"alaminhossain183@gmail.com",
+  amount: Number($('#uddokpayAmount').val()),
+  metadata:{id:"205"},
+  redirect_url:"https://morshed24.com/payment/success.php?link="+location.hostname,
+  cancel_url:"https://morshed24.com/payment/cancel.php?link="+location.hostname,
+ webhook_url:"https://morshed24.com/payment/webhook.php?link="+location.hostname
+ 
+ }
+ 
+ $("#amountSubmitButton").html(`<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>`);
+
+var res = await fetch(`https://pay.morshed24.com/api/checkout-v2`, {
+    method: 'POST',
+    body: JSON.stringify(values),
+    headers: {
+   
+    'RT-UDDOKTAPAY-API-KEY': '18b2ca74b5fe2f63d8293687d94fde987925c98f',
+    'Content-Type': 'application/json'
+    }
+});
+
+var data = await res.json();
+
+
+$("#amountSubmitButton").html(`সাবমিট`);
+
+
+if(data.status == true){
+  window.location.href =   data.payment_url;
+    
+}else{
+    alert("Something is wrong try again!")
+}
+console.log(data)
+
+}
+
+        
+    }
+ 
+ 
+
+    $('#addAmountSubmit').on('submit', onSubmit);
+  </script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+
+
+
+<script type="text/javascript">
+if ($(window).width() > 720) {
+    
+    
+//   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+// (function(){
+// var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+// s1.async=true;
+// s1.src='https://embed.tawk.to/6318f79b37898912e967d63a/1gcd7l7j7';
+// s1.charset='UTF-8';
+// s1.setAttribute('crossorigin','*');
+// s0.parentNode.insertBefore(s1,s0);
+// })(); 
+
+
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?24615';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"17",
+      "marginLeft":"1",
+      "marginBottom":"5",
+      "marginRight":"2",
+      "position":"right"
+},
+  "brandSetting":{
+      "brandName":"Software Company (Team)",
+      "brandSubTitle":"ADMIN PANEL CONTRACT",
+      "brandImg":"",
+      "welcomeText":" ",
+      "messageText":"Hello, I need Software",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Click Here",
+      "borderRadius":"30",
+      "autoShow":false,
+      "phoneNumber":"8801316701315"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+
+  
+    
+}
+
+
+   
+
+</script>
+
+  <!--End of Tawk.to Script-->
+
+
+
+<div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 8px; z-index: 892; cursor: default; position: fixed; top: 0px; left: -8px; height: 293px; display: none; opacity: 0;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 6px; height: 32px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails nicescroll-rails-hr" style="height: 8px; z-index: 892; top: 285px; left: -250px; position: fixed; cursor: default; display: none; width: 242px; opacity: 0;"><div class="nicescroll-cursors" style="position: absolute; top: 0px; height: 6px; width: 250px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px; left: 0px;"></div></div><div id="whatsapp_chat_widget">
+            <div id="wa-widget-send-button">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="wa-messenger-svg-whatsapp wh-svg-icon"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg>
+                <div style="color: white; font-size: 18px"></div>
+            </div>
+        
+            <div class="wa-chat-box" style="display: none;">
+                <div class="wa-chat-box-header">
+                    <img class="wa-chat-box-brand" onerror="this.src= &quot;https://cdn.clare.ai/wati/images/WATI_logo_square_2.png&quot;;" src="https://cdn.clare.ai/wati/images/WATI_logo_square_2.png">
+                    <div class="wa-chat-box-brand-text">
+                        <div class="wa-chat-box-brand-name">Software Company (Team)</div>
+                        <div class="wa-chat-box-brand-subtitle">ADMIN PANEL CONTRACT</div>
+                    </div>
+                    <div class="wa-chat-bubble-close-btn"><img style="display: table-row" src="https://cdn.shopify.com/s/files/1/0070/3666/5911/files/Vector.png?574"></div>
+                </div>
+                
+                <div class="wa-chat-box-content">
+                    <div class="wa-chat-box-content-chat">                            
+                        <div class="wa-chat-box-content-chat-brand">Software Company (Team)</div>
+                        <div class="wa-chat-box-content-chat-welcome"> </div>
+                    </div>
+                </div>
+                
+                <div class="wa-chat-box-send">
+                    <a role="button" target="_blank" href="https://api.whatsapp.com/send?phone=8801683390494&amp;text=Hello, I need Software" title="WhatsApp" class="wa-chat-box-content-send-btn"><svg width="20" height="20" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="wa-chat-box-content-send-btn-icon"><path d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522   c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938   c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537   c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333   c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882   c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977   c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344   c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223   C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"></path></svg>
+                        <span class="wa-chat-box-content-send-btn-text">Click Here</span>
+                    </a>
+                    <div class="wa-chat-box-poweredby">⚡ by <a href="https://wati.io/?utm_source=shopify&amp;utm_medium=chat_widget&amp;utm_campaign=shopify_widget" target="_blank" style="color: #006eff6e;">wati.io</a></div>
+                </div>
+            </div>
+        </div></body></html>
